@@ -15,7 +15,7 @@ function parseProducts(json){
 function renderProductsCards(json){
     this.clearProducts();
     let products = this.parseProducts(json);
-    let length = this.products.length;
+    let length = products.length;
 }
 // Аргументом функции является JSON
 // Выполните функцию clearProducts - она уже написана в коде, просто вызовите ее, аргументы не требуются
