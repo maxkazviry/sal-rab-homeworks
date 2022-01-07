@@ -12,17 +12,17 @@ function parseProducts(json){
 }
 
 // Напишите функцию renderProductsCards(json)
-function renderProductsCards(json){
-    this.clearProducts();
-    let products = this.parseProducts(json);
-    let length = products.length;
-}
+renderProductCards(json) {
+    console.log('qq');
+  this.clearProducts();
+  let products = this.parseProducts(json);
+  products.forEach((product) => {
+    this.addProduct(product);
+  });
+},
 // Аргументом функции является JSON
 // Выполните функцию clearProducts - она уже написана в коде, просто вызовите ее, аргументы не требуются
 // Выполните функцию parseProducts, передав в неё json - аргумент функции и запишите результат в переменную products
 // Запишите в переменную length значение свойства products.length
-for (i=0; i<length; i++) {
-    this.addProduct(products[i]);
-  }
 // Напишите цикл, в котором перебираете все products от 0 до (length - 1)
 // и выполняете addProduct с каждым элементом массива products (передавая элемент массива как аргумент)
